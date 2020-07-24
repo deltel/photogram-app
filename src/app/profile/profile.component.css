@@ -1,0 +1,14 @@
+/*
+div.card {
+    height: 200px;
+}
+*/
+div.col-md-2 img {
+    height: 150px;
+    width: 150px;
+}
+
+div.col-md-4 img {
+    max-height: 680px;
+    max-width: 360px;
+}

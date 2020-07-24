@@ -1,5 +1,13 @@
 # PhotogramApp
 
+## Consume Restful APIs
+Created proxy.conf.json file.
+Edited package.json file and added "--proxy-config proxy.conf.json" to start script
+
+## Attention Required
+
+Create a component to display a not found message.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 ## Development server

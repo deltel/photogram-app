@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "photogram-app"
+    }
+  },
+  "defaultProject": "photogram-app",
+  "cli": {
+    "analytics": false
+  }
 }

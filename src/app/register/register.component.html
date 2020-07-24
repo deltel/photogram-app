@@ -1,0 +1,57 @@
+<div class="col">
+    <div class="row">
+        <span class="col-sm-2"></span>
+        <span class="col-sm-8 h2 text-center py-4 ">Register</span>
+        <span class="col-sm-2"></span>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <form class="col-sm-4 border border-dark bg-white p-4" (ngSubmit)="registerUser()"
+            enctype="multipart/form-data" #registerForm="ngForm">
+            <div class="form-group">
+                <label for="username" class="font-weight-bold">Username</label>
+                <input type="text" class="form-control" name="username"
+                    id="username" [(ngModel)]="user.username" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="font-weight-bold">Password</label>
+                <input type="password" class="form-control" name="password"
+                    id="password" [(ngModel)]="user.password" required>
+            </div>
+            <div class="form-group">
+                <label for="firstname" class="font-weight-bold">First Name</label>
+                <input type="text" class="form-control" name="firstname"
+                    id="firstname" [(ngModel)]="user.firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="font-weight-bold">Last Name</label>
+                <input type="text" class="form-control" name="lastname"
+                    id="lastname" [(ngModel)]="user.lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="font-weight-bold">Email</label>
+                <input type="email" class="form-control" name="email" id="email" 
+                    [(ngModel)]="user.email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group">
+                <label for="location" class="font-weight-bold">Location</label>
+                <input type="text" class="form-control" name="location"
+                    id="location" [(ngModel)]="user.location" required>
+            </div>
+            <div class="form-group">
+                <label for="biography" class="font-weight-bold">Biography</label>
+                <textarea [(ngModel)]="user.biography" id="biography" 
+                    name="biography" class="form-control" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="photo" class="font-weight-bold">Photo</label>
+                <input type="file" class="form-control-file" id="photo" 
+                    name="profile_photo" (change)="onFileSelected($event)" required>
+            </div>
+            <button type="submit" [disabled]="!registerForm.form.valid"
+                (click)="registerUser(); registerForm.reset()" 
+                class="btn btn-success btn-block btn-lg font-weight-bold">Register</button>
+        </form>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
