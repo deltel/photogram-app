@@ -1,4 +1,5 @@
 # PhotogramApp
+The front-end of the photogram-java project.
 
 ## Consume Restful APIs
 Created proxy.conf.json file.
